@@ -1,0 +1,128 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+.header {
+  padding: 100px 0 70px 0;
+}
+.header__title {
+  color: #444444;
+  font-size: 44px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section {
+  padding: 0 0 50px 0;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  height: 65px;
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 600;
+  border: 2px #ff7a83 solid;
+  border-radius: 30px;
+  text-align: center;
+  padding: 15px 10px;
+}
+.button__video {
+  margin-bottom: 40px;
+  color: #ff7a83;
+  box-shadow: 7px 7px 30px 10px rgba(255, 122, 131, 0.1);
+}
+.button__video:hover {
+  background-color: #ff7a83;
+  color: #fff;
+  transition: 0.2s linear;
+}
+.button__happy {
+  margin: 30px auto 50px auto;
+  color: #fff;
+  background-color: #ff7a83;
+  text-transform: lowercase;
+}
+.button__happy:hover {
+  background-color: #fff;
+  border: 2px #ff7a83 solid;
+  color: #ff7a83;
+  transition: 0.2s linear;
+}
+.button__link {
+  margin-top: 30px;
+  text-transform: lowercase;
+  color: #5199ff;
+  background-color: #fff;
+  border: 2px #5199ff solid;
+  box-shadow: 7px 7px 30px 10px rgba(81, 153, 255, 0.1);
+}
+.button__link:hover {
+  color: #fff;
+  background-color: #5199ff;
+  transition: 0.2s linear;
+}
+
+.subtitle {
+  text-align: center;
+  color: #444444;
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+/*ADAPTIVE*/
+@media (max-width: 568px) {
+  .header__title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 414px) {
+  .header__title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+}
+@media (max-width: 320px) {
+  .header__title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
