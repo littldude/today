@@ -1,7 +1,8 @@
 *,
 ::after,
 ::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -60,11 +61,14 @@ a {
 .button__video {
   margin-bottom: 40px;
   color: #ff7a83;
-  box-shadow: 7px 7px 30px 10px rgba(255, 122, 131, 0.1);
+  -webkit-box-shadow: 7px 7px 30px 10px rgba(255, 122, 131, 0.1);
+          box-shadow: 7px 7px 30px 10px rgba(255, 122, 131, 0.1);
 }
 .button__video:hover {
   background-color: #ff7a83;
   color: #fff;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 .button__happy {
@@ -77,6 +81,8 @@ a {
   background-color: #fff;
   border: 2px #ff7a83 solid;
   color: #ff7a83;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 .button__link {
@@ -85,11 +91,14 @@ a {
   color: #5199ff;
   background-color: #fff;
   border: 2px #5199ff solid;
-  box-shadow: 7px 7px 30px 10px rgba(81, 153, 255, 0.1);
+  -webkit-box-shadow: 7px 7px 30px 10px rgba(81, 153, 255, 0.1);
+          box-shadow: 7px 7px 30px 10px rgba(81, 153, 255, 0.1);
 }
 .button__link:hover {
   color: #fff;
   background-color: #5199ff;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
